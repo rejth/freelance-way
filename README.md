@@ -4,5 +4,5 @@
 https://ilyakirsanov.ru/freelance-way/
 
 **Технологии:** 
-1) HTML, CSS, Flexbox Layout
+HTML, CSS, Flexbox Layout
 
