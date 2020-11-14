@@ -1,0 +1,881 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  color: #202020;
+}
+
+/* Общий стиль для всех картинок */
+img {
+  max-width: 100%;
+}
+
+/* Общие стили для всех контейнеров страницы */
+.container {
+  display: flex;
+  max-width: 1140px;
+  margin: auto;
+}
+
+/* Общие стили для всех h2-заголовков страницы */
+.section-title {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 22px 0;
+  width: 100%;
+  background-color: #f1f1f1;
+  z-index: 2;
+}
+
+.header .header-container {
+  justify-content: space-between;
+}
+
+.header-container .logo {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.header-container .nav .item {
+  margin-right: 22px;
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: none;
+  color: inherit;
+}
+
+.header-container .login {
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: none;
+  color: inherit;
+}
+
+.hero {
+  margin-top: 60px;
+  padding-top: 62px;
+  padding-bottom: 71px;
+}
+
+.hero .hero-container {
+  align-items: center;
+}
+
+.hero-container .img-block {
+  position: relative;
+  margin-right: 122px;
+  max-width: 460px;
+}
+
+.hero-container .img-block .sale {
+  position: absolute;
+  top: 23px;
+  right: 0;
+  padding: 12px 17px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #c93535;
+}
+
+.hero-container .text .author {
+  display: block;
+  margin-bottom: 22px;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.hero-container .text .title {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-family: "MuseoCyrl-900", sans-serif;
+  font-size: 54px;
+}
+
+.hero-container .text .subtitle {
+  display: block;
+  margin-bottom: 48px;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.hero-container .text .info {
+  display: flex;
+  margin-bottom: 49px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.hero-container .text .info .item {
+  margin-bottom: 16px;
+  flex-basis: 47%;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.hero-container .text .price {
+  display: flex;
+  margin-bottom: 48px;
+  align-items: center;
+}
+
+.hero-container .text .price .amount {
+  margin-right: 64px;
+  font-size: 55px;
+  font-weight: 400;
+}
+
+.hero-container .text .price .like {
+  margin-right: 7px;
+  cursor: pointer;
+}
+
+.hero-container .text .price .favorites {
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+  color: inherit;
+}
+
+.buttons .button {
+  padding: 23px 50px;
+  max-width: 100%;
+  font-size: 16px;
+  font-weight: 700;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.buttons .read {
+  margin-right: 20px;
+  background-color: #f89c02;
+  color: #ffffff;
+}
+
+.buttons .buy {
+  border: 2px solid #f89c02;
+  background-color: #ffffff;
+  color: #f89c02;
+}
+
+.about {
+  padding: 93px 0;
+  background-color: #f1f1f1;
+}
+
+.about .about-container {
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.about-container .about-book {
+  max-width: 100%;
+  margin-right: 130px;
+}
+
+.about-container .about-book .section-title {
+  margin-bottom: 35px;
+}
+
+.about-container .about-book .about-text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.about-container .about-author {
+  display: flex;
+  padding: 68px 53px;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 552px;
+  border-radius: 10px;
+  border: 1px solid #f3f3f3;
+  box-shadow: 0 1px 120px rgba(161, 161, 161, 0.08);
+  background-color: #ffffff;
+}
+
+.about-container .about-author .avatar {
+  margin-right: 21px;
+  width: 100px;
+  height: 102px;
+  object-fit: cover;
+}
+
+.about-container .about-author .bio .name {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.about-container .about-author .bio .link {
+  display: inline-block;
+  margin-top: 14px;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+  color: inherit;
+}
+
+.about-container .about-author .description {
+  margin-top: 27px;
+  flex-basis: 100%;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.readers {
+  padding-top: 87px;
+  padding-bottom: 109px;
+}
+
+.readers .readers-container {
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.readers-container .section-title {
+  display: flex;
+  margin-bottom: 27px;
+  flex-basis: 100%;
+}
+
+.readers-container .foto-item {
+  margin-top: 30px;
+  width: 165px;
+  height: 165px;
+  object-fit: cover;
+}
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 93px;
+  background-color: #f1f1f1;
+}
+
+.footer-container {
+  flex-wrap: wrap;
+}
+
+.footer-container .item {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.footer-container .requizets {
+  margin-right: 158px;
+}
+
+.footer-container .info {
+  margin-right: 148px;
+}
+
+.footer-container .item .title {
+  margin: 0;
+  margin-bottom: 32px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.footer-container .item .link {
+  margin-bottom: 16px;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+  color: inherit;
+}
+
+.up {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 18px;
+  box-shadow: 0 1px 120px rgba(161, 161, 161, 0.08);
+  border-radius: 4px;
+  border: 1px solid #eeeeee;
+  background-color: #ffffff;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+
+  .hero {
+    padding-bottom: 90px;
+  }
+
+  .hero-container .img-block {
+    margin-right: 28px;
+    max-width: 390px;
+    min-width: 390px;
+  }
+
+  .about-container .about-book {
+    margin-right: 52px;
+    max-width: 367px;
+  }
+
+  .readers {
+    padding-top: 69px;
+    padding-bottom: 94px;
+  }
+
+  .readers-container .section-title {
+    margin-bottom: 27px;
+  }
+
+  .readers-container .foto-item {
+    width: 139px;
+    height: 139px;
+    object-fit: cover;
+  }
+
+  .footer {
+    padding-top: 60px;
+    padding-bottom: 93px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 760px;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .hero {
+    padding-top: 59px;
+    padding-bottom: 79px;
+  }
+
+  .hero-container .img-block {
+    max-width: 298px;
+    min-width: 298px;
+  }
+
+  .hero-container .img-block .sale {
+    padding: 12px 15px;
+    font-size: 12px;
+  }
+
+  .hero-container .text .author {
+    margin-bottom: 13px;
+    font-size: 22px;
+  }
+
+  .hero-container .text .title {
+    margin-bottom: 10px;
+    font-size: 46px;
+  }
+
+  .hero-container .text .subtitle {
+    margin-bottom: 20px;
+  }
+
+  .hero-container .text .info {
+    margin-bottom: 10px;
+  }
+
+  .hero-container .text .info .age,
+  .hero-container .text .info .format {
+    flex-grow: 1;
+  }
+
+  .hero-container .text .price {
+    margin-bottom: 35px;
+  }
+
+  .buttons .button {
+    font-size: 14px;
+  }
+
+  .about {
+    padding-top: 80px;
+    padding-bottom: 82px;
+  }
+
+  .about .about-container {
+    flex-wrap: wrap;
+  }
+
+  .about-container .about-book {
+    margin-bottom: 62px;
+  }
+
+  .about-container .about-book .section-title {
+    margin-bottom: 29px;
+    font-size: 24px;
+  }
+
+  .about-container .about-book {
+    margin-right: 0;
+    max-width: 100%;
+  }
+
+  .readers {
+    padding-top: 74px;
+    padding-bottom: 81px;
+  }
+
+  .readers-container .section-title {
+    margin-bottom: 27px;
+    font-size: 24px;
+  }
+
+  .footer {
+    padding-top: 60px;
+    padding-bottom: 93px;
+  }
+
+  .readers-container .foto-item:nth-child(n + 12) {
+    display: none;
+  }
+
+  .footer-container .requizets,
+  .footer-container .info {
+    margin-right: 55px;
+  }
+}
+
+@media (max-width: 798px) {
+  .container {
+    max-width: 530px;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .hero {
+    padding-top: 40px;
+    padding-bottom: 80px;
+  }
+
+  .hero .hero-container {
+    flex-wrap: wrap;
+  }
+
+  .hero-container .img-block {
+    margin-right: 0;
+    min-width: 100%;
+  }
+
+  .hero-container .img-block .book-img {
+    margin-bottom: 60px;
+    width: 100%;
+  }
+
+  .hero-container .img-block .sale {
+    padding: 12px 17px;
+    font-size: 18px;
+  }
+
+  .hero-container .text .author {
+    margin-bottom: 13px;
+    font-size: 22px;
+  }
+
+  .hero-container .text .title {
+    margin-bottom: 10px;
+    font-size: 46px;
+  }
+
+  .hero-container .text .subtitle {
+    margin-bottom: 28px;
+  }
+
+  .hero-container .text .info {
+    margin-bottom: 39px;
+  }
+
+  .hero-container .text .price {
+    margin-bottom: 39px;
+  }
+
+  .about {
+    padding-top: 81px;
+    padding-bottom: 89px;
+  }
+
+  .about-container .about-book {
+    margin-bottom: 70px;
+    margin-right: 0;
+  }
+
+  .about-container .about-book .section-title {
+    margin-bottom: 29px;
+  }
+
+  .about-container .about-book .about-text {
+    max-width: 100%;
+  }
+
+  .about-container .about-author {
+    padding: 68px 53px;
+    max-width: 100%;
+  }
+
+  .about-container .about-author .avatar {
+    width: 100px;
+    height: 102px;
+  }
+
+  .readers {
+    padding-top: 80px;
+    padding-bottom: 85px;
+  }
+
+  .readers-container .section-title {
+    margin-bottom: 27px;
+  }
+
+  .readers-container .foto-item {
+    width: 165px;
+    height: 165px;
+  }
+
+  .readers-container .foto-item:nth-child(n + 8) {
+    display: none;
+  }
+
+  .footer {
+    padding-top: 60px;
+    padding-bottom: 39px;
+  }
+
+  .footer-container .requizets,
+  .footer-container .info {
+    margin-right: 40px;
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    max-width: 90%;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .hero {
+    padding-top: 42px;
+    padding-bottom: 64px;
+  }
+
+  .hero .hero-container {
+    flex-wrap: wrap;
+  }
+
+  .hero-container .img-block {
+    max-width: 100%;
+    min-width: 100%;
+  }
+
+  .hero-container .img-block .book-img {
+    margin-bottom: 60px;
+    width: 100%;
+  }
+
+  .hero-container .text .author {
+    margin-bottom: 16px;
+    font-size: 18px;
+  }
+
+  .hero-container .text .title {
+    margin-bottom: 19px;
+    font-size: 36px;
+  }
+
+  .hero-container .text .subtitle {
+    margin-bottom: 31px;
+    font-size: 20px;
+  }
+
+  .hero-container .text .info {
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+
+  .hero-container .text .info .item {
+    flex-basis: 100%;
+  }
+
+  .hero-container .text .price {
+    margin-bottom: 36px;
+  }
+
+  .hero-container .text .price .like {
+    margin-left: 28px;
+  }
+
+  .hero-container .text .price .favorites {
+    display: none;
+  }
+
+  .buttons .button {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .buttons .read {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .about {
+    padding-top: 60px;
+    padding-bottom: 97px;
+  }
+
+  .about-container .about-book {
+    margin-bottom: 71px;
+    margin-right: 0;
+    max-width: 100%;
+  }
+
+  .about-container .about-book .section-title {
+    margin-bottom: 35px;
+  }
+
+  .about-container .about-book .about-text {
+    max-width: 100%;
+  }
+
+  .about-container .about-author {
+    padding: 54px 47px;
+    max-width: 100%;
+  }
+
+  .about-container .about-author .avatar {
+    width: 64px;
+    height: 66px;
+  }
+
+  .about-container .about-author .bio .link {
+    font-size: 14px;
+  }
+
+  .about-container .about-author .desciption {
+    font-size: 14px;
+  }
+
+  .readers {
+    padding-top: 65px;
+    padding-bottom: 69px;
+  }
+
+  .readers-container .section-title {
+    margin-bottom: 13px;
+  }
+
+  .readers-container .foto-item {
+    width: 144px;
+    height: 144px;
+  }
+
+  .readers-container .foto-item:nth-child(n + 8) {
+    display: none;
+  }
+
+  .footer {
+    padding-top: 60px;
+    padding-bottom: 39px;
+  }
+
+  .footer-container .item {
+    flex-basis: 100%;
+    margin-right: 0;
+    margin-bottom: 36px;
+  }
+
+  .footer-container .item .title {
+    font-size: 18px;
+    margin-bottom: 32px;
+  }
+
+  .footer-container .item .link {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .container {
+    max-width: 90%;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .hero {
+    padding-top: 49px;
+    padding-bottom: 60px;
+  }
+
+  .hero .hero-container {
+    flex-wrap: wrap;
+  }
+
+  .hero-container .img-block {
+    max-width: 100%;
+    min-width: 100%;
+  }
+
+  .hero-container .img-block .book-img {
+    margin-bottom: 43px;
+    width: 100%;
+  }
+
+  .hero-container .img-block .sale {
+    padding: 12px 15px;
+    font-size: 12px;
+  }
+
+  .hero-container .text .author {
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+
+  .hero-container .text .title {
+    margin-bottom: 11px;
+    font-size: 24px;
+  }
+
+  .hero-container .text .subtitle {
+    margin-bottom: 35px;
+    font-size: 18px;
+  }
+
+  .hero-container .text .info {
+    flex-wrap: wrap;
+    margin-bottom: 18px;
+  }
+
+  .hero-container .text .info .item {
+    flex-basis: 100%;
+    font-size: 14px;
+    margin-bottom: 18px;
+  }
+
+  .hero-container .text .price {
+    margin-bottom: 36px;
+  }
+
+  .hero-container .text .price .amount {
+    margin-right: 28px;
+  }
+
+  .hero-container .text .price .favorites {
+    display: none;
+  }
+
+  .buttons .button {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .buttons .read {
+    margin-bottom: 16px;
+  }
+
+  .about {
+    padding-top: 60px;
+    padding-bottom: 54px;
+  }
+
+  .about-container .about-book {
+    margin-bottom: 50px;
+  }
+
+  .about-container .about-book .section-title {
+    margin-bottom: 35px;
+    margin-right: 0;
+    max-width: 100%;
+  }
+
+  .about-container .about-book .about-text {
+    max-width: 100%;
+  }
+
+  .about-container .about-author {
+    padding: 32px 22px;
+    max-width: 100%;
+  }
+
+  .about-container .about-author .avatar {
+    margin-right: 10px;
+  }
+
+  .about-container .about-author .bio {
+    margin-top: 15px;
+  }
+
+  .about-container .about-author .avatar {
+    width: 64px;
+    height: 66px;
+  }
+
+  .about-container .about-author .desciption {
+    font-size: 14px;
+  }
+
+  .readers {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .readers-container .section-title {
+    margin-bottom: 6px;
+  }
+
+  .readers-container .foto-item {
+    width: 124px;
+    height: 125px;
+  }
+
+  .readers-container .foto-item:nth-child(n + 6) {
+    display: none;
+  }
+
+  .footer {
+    padding-top: 60px;
+    padding-bottom: 39px;
+  }
+
+  .footer-container .item {
+    flex-basis: 100%;
+    margin-right: 0;
+    margin-bottom: 36px;
+  }
+
+  .footer-container .item .title {
+    font-size: 18px;
+    margin-bottom: 32px;
+  }
+
+  .footer-container .item .link {
+    font-size: 16px;
+  }
+}
