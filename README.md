@@ -3,6 +3,6 @@
 
 https://ilyakirsanov.ru/freelance-way/
 
-**Технологии:** 
+**Технологии:**  
 HTML, CSS, Flexbox Layout
 
