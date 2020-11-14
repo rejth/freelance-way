@@ -1,5 +1,5 @@
 # freelance-way
-Учебный проект
+Учебный проект для практики верстки
 
 https://ilyakirsanov.ru/freelance-way/
 
