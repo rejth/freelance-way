@@ -1,5 +1,5 @@
 # freelance-way
-Учебный проект для практики верстки
+Статический landing page "Freelance Way". Практика верстки
 
 https://ilyakirsanov.ru/freelance-way/
 
